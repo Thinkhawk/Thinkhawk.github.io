@@ -1,0 +1,161 @@
+<DOCTYPE! html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Assam flood relief</title>
+	<link rel="stylesheet" type="text/css" href="mp1style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cambay">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT Sans Caption">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather Sans">
+  <script src="text.js"></script>
+</head>
+<header onmouseenter="setTimeout(hide,10000)">
+  <div style="position:fixed; background-color: white; width:100%; height:120px; top:-50px; left:0px;opacity: 1; box-shadow:2px 2px 20px black; border-bottom-right-radius:5px; border-bottom-left-radius: 5px; z-index: +2"></div>
+
+  <span style="position: fixed; top: 10px; left: 30px;z-index: +2;">
+    <img src="logo-1.png" width="120"/> 
+  </span>
+
+  <span style="position: fixed; top: 37px; left: 160px;z-index: +2;"> 
+    <img src="Udhavu.png" width="300"/> 
+  </span>
+
+  <div id="mySidenav" class="sidenav">
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <br>
+   <a href="home.html">Home</a>
+   <a href="about.html">About Us</a>
+   <a href="mp1(1).html">Our Work</a>
+   <a href="donate.html">Get Involved</a>
+   <a href="contact.html">Contact Us</a>
+ </div>
+ 
+ <div >
+  <a class="opennav" onclick="openNav()">&#9776;</a>
+</div>
+
+<section>
+  <span class="newevent" onclick="newevent()">New Events |</span>
+  <span class="mailclose" id="close" onclick="close1()">&times;</span>
+  <input type="text" placeholder="e-mail id" class="input" id="mail">
+  <input type="button"  value="notify" class="submit" id="notify" onclick="setTimeout(notify,500)">
+  <span class="confirm" id="confirmation">You will be notified about all our future events through the registered email id. We are grateful to your support.</span>
+  
+  <div>
+    <a href="https://www.aroh.in/UploadFile/Event/WSD2020_AROH.jpg" target="_blank" class="notification" id="popup1" style="top:220px;">YOGA for Resilient Youth Webinar, India. First Session Starts on the World Skills Day 2020, 15th October 2020, Wednesday, 4pm onwards<hr> <i>>>click to know more</i></a>
+    <a href="https://cdn.slidesharecdn.com/ss_thumbnails/nationalyouthday-140116222959-phpapp01-160523124759-thumbnail-4.jpg?cb=1464366361" target="_blank" class="notification" id="popup2" style="top:340px;">International conference for youth Webinar, India12 January 2021 Conference on National Youth Day 2021, Tuesday, 4pm onwards<hr> <i>>>click to know more</i></a>      
+    <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQvbhEzw7aezxNysogUS5YW9mVrEJvdnd4-w&usqp=CAU" target="_blank" class="notification" id="popup3" style="top:460px;">Planting saplings at Kabini forest, India23 December 2020 First session starts on the National Farmers day 2020, Wednesday, 10am onwards<hr> <i>>>click to know more</i></a>
+
+    <span class="popupclose" id="popclose1" onclick="popclose()" style="top:200px;">&times;</span>
+    <span class="popupclose" id="popclose2" onclick="popclose()" style="top:320px;">&times;</span>
+    <span class="popupclose" id="popclose3" onclick="popclose()" style="top:440px;">&times;</span>
+  </div>
+
+</section>
+</header>
+<body>
+  <h1 style="margin-left:100px;">| Assam Flood Relief</h1>
+  <br>
+  <dl class="list" style="margin-top:50px; margin-left: 70px;">
+    <a href="mp1(1).html"><dt class="select">Health</dt></a><hr/>
+    <br>
+    <a href="mp1(edu).html"><dt class="select">Education</dt></a><hr/>
+    <br>
+    
+    <a href="mp1(relief).html"><dt class="select">Relief Work</dt></a><hr/>
+    <br>
+  </dl>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="assam1.jpg" style="width:1000px; height:300px;">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="assam2.jpg" style="width:1000px; height: 300px;">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="assam3.jpg" style="width:1000px; height: 300px;">
+    </div>
+    <div class="mySlides fade">
+      <img src="assam4.jpg" style="width:1000px; height: 300px;">
+    </div>
+    <div class="mySlides fade">
+      <img src="assam5.jpg" style="width:1000px; height: 300px;">
+    </div>
+  </div>
+  <br>
+
+  <div style="text-align:center; left: 690px; position: absolute; top: 550px">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000);
+      }
+    </script>
+    <div style="width:900px; margin-left: 470px; margin-top: 10px;">
+      <p class="p2" style="left: -50px">
+        Assam floods were the least cared for in the years 2019 and 2020 and wasn't considered a great news. But in fact they too suffered as much as the other affected states or rather even more. With the help of donators and other sponsorers UDHAVU reached out to them as well and made sure that they receive all the basic needs and mental support that they need during this time.
+        <br>
+      </p>
+    </div>
+    <div class="row" style="margin-left: 140px;">
+      <div class="column">
+        <a target="_self" href="karnataka.html">
+          <button class="button" style="vertical-align: middle; margin-left: 250px; top: -50px; position: relative;"><< PREVIOUS
+          </button>
+        </a>
+      </div>
+      <div class="column">
+        <a target="_self" href="corona.html">
+          <button class="button2" style="vertical-align: middle; margin-left: 700px; top:-50px; ">NEXT >>
+          </button>
+        </a>
+      </div>
+    </div>
+    <footer>
+      <div class="footer" style="bottom:-400px;height: 85px;width: 101%"></div>
+      <span >
+       <img src="logo-1b.png" width="50px" style=" left:30px;bottom:-370px;position: absolute; "/> 
+       <img src="udhavuBG.png" width="130px" style=" left:82px;bottom:-372px;position: absolute; "/> 
+     </span> 
+     <span class="footerNav" style="bottom:-372px;">
+      <a href="home.html">HOME</a><a>|</a>
+      <a href="about.html">ABOUT US</a><a>|</a>
+      <a href="mp1(1).html">OUR WORK</a><a>|</a>
+      <a href="donate.html">GET INVOLVED</a><a>|</a>
+      <a href="donate.html">CONTACT US</a>
+    </span>
+    <span>
+     <a href="mailto:chandralekhaselvaraju4@gmail.com" target="_blank"><img src="Fmail.png" width="30px" style=" right:30px;bottom:-370px;position: absolute; "/></a> 
+     <a href="https://www.youtube.com/channel/UCoqb0vWpqMa1h3-Am-ou3mg" target="_blank"><img src="ytw.png" width="30px" style=" right:75px;bottom:-367px;position: absolute; "/></a>
+     <a href="https://twitter.com/RevanthVijayak2" target="_blank"><img src="tww.png" width="30px" style=" right:120px;bottom:-370px;position: absolute; "/></a>
+     <a href="https://instagram.com/_udhavu__?igshid=3w7r9dooud26" target="_blank"><img src="Fin.png" width="30px" style=" right:165px;bottom:-370px;position: absolute; "/></a>
+     <a href="https://www.facebook.com/reyvanthvijayakumar" target="_blank"><img src="Ffb.png" width="30px" style=" right:210px;bottom:-370px;position: absolute; "/></a>
+   </span>
+ </footer>
+</body>
+</html>

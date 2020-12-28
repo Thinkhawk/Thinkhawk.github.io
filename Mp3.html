@@ -1,0 +1,116 @@
+<DOCTYPE! html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Medical Camp</title>
+<link rel="stylesheet" type="text/css" href="mp1style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cambay">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT Sans Caption">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather Sans">
+   <script src="text.js"></script>
+</head>
+<header onmouseenter="setTimeout(hide,10000)">
+        <div style="position:fixed; background-color: white; width:100%; height:120px; top:-50px; left:0px;opacity: 1; box-shadow:2px 2px 20px black; border-bottom-right-radius:5px; border-bottom-left-radius: 5px; z-index: +2"></div>
+
+        <span style="position: fixed; top: 10px; left: 30px;z-index: +2;">
+            <img src="logo-1.png" width="120"/> 
+        </span>
+
+        <span style="position: fixed; top: 37px; left: 160px;z-index: +2;"> 
+            <img src="Udhavu.png" width="300"/> 
+        </span>
+
+         <div id="mySidenav" class="sidenav">
+             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+             <br>
+             <a href="home.html">Home</a>
+             <a href="about.html">About Us</a>
+             <a href="mp1(1).html">Our Work</a>
+             <a href="donate.html">Get Involved</a>
+             <a href="contact.html">Contact Us</a>
+        </div>
+ 
+        <div >
+            <a class="opennav" onclick="openNav()">&#9776;</a>
+        </div>
+
+        <section>
+            <span class="newevent" onclick="newevent()">New Events |</span>
+            <span class="mailclose" id="close" onclick="close1()">&times;</span>
+            <input type="text" placeholder="e-mail id" class="input" id="mail">
+            <input type="button"  value="notify" class="submit" id="notify" onclick="setTimeout(notify,500)">
+            <span class="confirm" id="confirmation">You will be notified about all our future events through the registered email id. We are grateful to your support.</span>
+           
+            <div>
+                <a href="https://www.aroh.in/UploadFile/Event/WSD2020_AROH.jpg" target="_blank" class="notification" id="popup1" style="top:220px;">YOGA for Resilient Youth Webinar, India. First Session Starts on the World Skills Day 2020, 15th October 2020, Wednesday, 4pm onwards<hr> <i>>>click to know more</i></a>
+                <a href="https://cdn.slidesharecdn.com/ss_thumbnails/nationalyouthday-140116222959-phpapp01-160523124759-thumbnail-4.jpg?cb=1464366361" target="_blank" class="notification" id="popup2" style="top:340px;">International conference for youth Webinar, India12 January 2021 Conference on National Youth Day 2021, Tuesday, 4pm onwards<hr> <i>>>click to know more</i></a>      
+                <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQvbhEzw7aezxNysogUS5YW9mVrEJvdnd4-w&usqp=CAU" target="_blank" class="notification" id="popup3" style="top:460px;">Planting saplings at Kabini forest, India23 December 2020 First session starts on the National Farmers day 2020, Wednesday, 10am onwards<hr> <i>>>click to know more</i></a>
+
+                <span class="popupclose" id="popclose1" onclick="popclose()" style="top:200px;">&times;</span>
+                <span class="popupclose" id="popclose2" onclick="popclose()" style="top:320px;">&times;</span>
+                <span class="popupclose" id="popclose3" onclick="popclose()" style="top:440px;">&times;</span>
+            </div>
+
+        </section>
+    <div style="position: absolute; top: 210px; left: 290px; opacity:1; z-index:1"> 
+       <img class="logo" src="bandage.png" width="130"/>
+     </div>
+     <div style="position: absolute; top: 780px; left: 1065px; opacity:1; z-index:1; padding:0px "> 
+       <img class="logo" src="bandage.png" width="130"/>
+     </div>
+     <div style="position: absolute; top: 75px; left: -50px; opacity: 0.3; z-index:-1; "> 
+       <img class="logo" src="medc.jpg" width="1395" height="950"/> 
+   </div>
+ </header>
+<body>
+	<h1>| Medical Camp</h1>
+	<br>
+	<dl class="list">
+    	<a href="mp1(1).html"><dt class="select">Health</dt></a><hr/>
+    	<br>
+    	<a href="mp1(edu).html"><dt class="select">Education</dt></a><hr/>
+    	<br>
+    
+    	<a href="mp1(relief).html"><dt class="select">Relief Work</dt><hr/>
+    	<br>
+  </dl>
+	<div style="width:800px; margin-left: 350px; margin-top: 50px">
+		<p>
+			<br>
+			Looking into the various surveys conducted in the rural localities it was found that in most cases of death due to any disease the patient either failed to identify the symptoms and what the disease was or couldnt get the required treatment at the right time due to the lack of facilities and the lack of knowledge about the treatments.
+			<br>
+			<br>
+			A basic general check-up is conducted for all once in 3 months after which looking into the results are refered to hospitals if any kind of treatment is required. As part of the medical camps, an awareness session is conducted which would cover a lot of diseases,their symptoms and the treatments available. We also make sure that they are well aware about medical insurances.
+			<br>
+		</p>
+	</div>
+	<div>
+		<a target="_self" href="mp2.html">
+			<button class="button" style="vertical-align: middle; margin-left: 250px;"><< PREVIOUS
+			</button>
+		</a>
+	</div>
+	<br>
+   <footer>
+        <div class="footer" style="bottom:-375px; width: 101%; height: 85px;"></div>
+        <span >
+             <img src="logo-1b.png" width="50px" style=" left:30px;bottom:-347px;position: absolute; "/> 
+             <img src="udhavuBG.png" width="130px" style=" left:82px;bottom:-350px;position: absolute; "/> 
+        </span> 
+        <span class="footerNav" style="bottom:-347px;">
+            <a href="home.html">HOME</a><a>|</a>
+            <a href="about.html">ABOUT US</a><a>|</a>
+            <a href="mp1(1).html">OUR WORK</a><a>|</a>
+            <a href="donate.html">GET INVOLVED</a><a>|</a>
+            <a href="donate.html">CONTACT US</a>
+        </span>
+        <span>
+             <a href="mailto:chandralekhaselvaraju4@gmail.com" target="_blank"><img src="Fmail.png" width="30px" style=" right:30px;bottom:-346px;position: absolute; "/></a> 
+          <a href="https://www.youtube.com/channel/UCoqb0vWpqMa1h3-Am-ou3mg" target="_blank"><img src="ytw.png" width="30px" style=" right:75px;bottom:-342px;position: absolute; "/></a>
+          <a href="https://twitter.com/RevanthVijayak2" target="_blank"><img src="tww.png" width="30px" style=" right:120px;bottom:-346px;position: absolute; "/></a>
+         <a href="https://instagram.com/_udhavu__?igshid=3w7r9dooud26" target="_blank"><img src="Fin.png" width="30px" style=" right:165px;bottom:-346px;position: absolute; "/></a>
+         <a href="https://www.facebook.com/reyvanthvijayakumar" target="_blank"><img src="Ffb.png" width="30px" style=" right:210px;bottom:-346px;position: absolute; "/></a>
+        </span>
+    </footer>
+</body>
+</html>
